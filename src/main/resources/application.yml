@@ -1,0 +1,10 @@
+cloud:
+  aws:
+    credentials:
+      secret-key: <<secret-key>>
+      access-key: <<access-key>>
+    end_point: <<SQSURL>>
+    region:
+      static: ap-south-1
+    stack:
+      auto: 'false'
