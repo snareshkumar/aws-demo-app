@@ -14,10 +14,4 @@ public class AwsDemoAppApplication {
 		SpringApplication.run(AwsDemoAppApplication.class, args);
 	}
 
-	@Bean
-	public QueueMessagingTemplate queueMessagingTemplate(
-			AmazonSQSAsync amazonSQSAsync) {
-		return new QueueMessagingTemplate(amazonSQSAsync);
-	}
-
 }
